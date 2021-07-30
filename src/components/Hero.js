@@ -1,18 +1,18 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Button } from './Buttons'
-import Video from '../assets/videos/video.mp4'
+import Video from '../assets/videos/video4.mp4'
 
 const Hero = () => {
     return (
         <HeroContainer>
             <HeroBg>
-                <VideoBg src={Video} type="video/mp4" autoPlay
+                <VideoBg src={Video} type="video4/mp4" autoPlay
                 loop muted playsInline />
             </HeroBg>
             <HeroContent>
                 <HeroItems>
-                    <HeroH1>Earn additional yield on your LP!</HeroH1>
+                    <HeroH1>Earn Additional Yield On Your LP!</HeroH1>
                     <HeroP>YAPE</HeroP>
                     <Button primary="true" big="true" round="true"
                     to="/farm">
