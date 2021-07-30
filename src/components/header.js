@@ -8,7 +8,7 @@ import { Button } from "./Buttons"
 const Header = () => {
 return (
   <Nav>
-    <NavLink to="/">EXPLORIX</NavLink>
+    <NavLink to="/">Yapeswap</NavLink>
     <Bars />
     <NavMenu>
       {menuData.map((item, index) => (
@@ -31,7 +31,7 @@ return (
 export default Header
 
 const Nav = styled.nav`
-  background: gold;
+  background: transparent;
   height: 80px;
   display: flex;
   justify-content: space-between;
