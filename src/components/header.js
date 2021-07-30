@@ -64,8 +64,7 @@ const Bars = styled(FaBars)`
     cursor: pointer;
   }
   `
-
-  const NavMenu = styled.div`
+    const NavMenu = styled.div`
     display: flex;
     align-items: center:
     margin-right: -48px;
