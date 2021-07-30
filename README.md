@@ -1,1 +1,3 @@
-# Gatsby
+Landing Site
+
+Figma + Gatsby.js
