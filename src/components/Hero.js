@@ -1,19 +1,20 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Button } from './Buttons'
-import Video from '../assets/videos/video4.mp4'
+import Video from '../assets/videos/video1.mp4'
 
 const Hero = () => {
     return (
         <HeroContainer>
             <HeroBg>
-                <VideoBg src={Video} type="video4/mp4" autoPlay
+                <VideoBg src={Video} type="video1/mp4" autoPlay
                 loop muted playsInline />
             </HeroBg>
             <HeroContent>
                 <HeroItems>
-                    <HeroH1>Earn Additional Yield On Your LP!</HeroH1>
-                    <HeroP>YAPE</HeroP>
+                    <HeroH1>Yearn-ed Liquidity Pools for Apes.</HeroH1>
+                    <HeroP>When your LP's aren't being used, they aren't earning...
+That's why we Ape them into Yearn Finance until they're needed for swaps!</HeroP>
                     <Button primary="true" big="true" round="true"
                     to="/farm">
                         Earn Now
@@ -89,7 +90,6 @@ const HeroItems = styled.div`
     height: 100vh;
     max-height: 100%;
     padding: 0;
-    color: #fff;
     line-height: 1.1;
     font-weight: bold;
 
@@ -100,10 +100,12 @@ const HeroH1 = styled.h1`
     margin-bottom: 1.5rem;
     letter-spacing: 3px;
     padding: 0 1 rem;
+    color: #fff;
 `
 
 const HeroP = styled.p`
-    font-size: clamp(1rem, 3vw, 3rem);
+    font-size: clamp(1rem, 1vw, 2rem);
     margin-bottom: 2rem;
-    font-weight: 400;
+    font-weight: 600;
+    color: #F3722C;
 `

@@ -15,12 +15,11 @@ return (
         <NavLink to={item.link} key={index}>
           {item.title}
         </NavLink>
-
       ))}
     </NavMenu>
     <NavBtn>
       <Button primary="true" round="true" to="/swap">
-        Enter Yapeswap
+        Enter App
         </Button>
     </NavBtn>
   </Nav>
