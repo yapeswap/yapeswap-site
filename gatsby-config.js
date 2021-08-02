@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Yapeswap`,
-    description: `Yearn-ed Uniswap for Apes!
+    description: `Yearn-ed Liquidity for Apes!
     When your LP's aren't being used, they aren't earning...
     That's why we Ape them into Yearn Finance until they're needed for swaps!`,
     author: `@gatsbyjs`,
@@ -11,6 +11,7 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
     `gatsby-plugin-styled-components`,
+
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -36,5 +37,15 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
+  ],
+  plugins: [
+    {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: /svg/ // See below to configure properly
+        }
+      }
+    }
   ],
 }

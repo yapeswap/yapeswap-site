@@ -15,9 +15,8 @@ const Hero = () => {
                     <HeroH1>Yearn-ed Liquidity Pools for Apes.</HeroH1>
                     <HeroP>When your LP's aren't being used, they aren't earning...
 That's why we Ape them into Yearn Finance until they're needed for swaps!</HeroP>
-                    <Button primary="true" big="true" round="true"
-                    to="yapeswap-interface.vercel.app/#/swap">
-                        Earn Now
+                    <Button primary="true" big="true" round="true" href="https://yapeswap-interface.vercel.app">
+                        Enter App
                     </Button>
                 </HeroItems>
             </HeroContent>
@@ -107,6 +106,6 @@ const HeroP = styled.p`
     font-size: clamp(.5rem, 2vw, 1.25rem);
     margin-bottom: 2rem;
     letter-spacing: 3px;
-    font-weight: 600;
+    font-weight: 500;
     color: #F3722C;
 `

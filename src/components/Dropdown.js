@@ -21,7 +21,7 @@ const Dropdown = ({ isOpen, toggle }) => {
                     ))}
                 </DropdownMenu>
                 <Btnwrap>
-                    <Button primary="true" round="true" to="/farm">
+                    <Button primary="true" round="true" to="https://yapeswap-interface.vercel.app/#/swap">
                         Enter App</Button>
                 </Btnwrap>
             </DropdownWrapper>
@@ -63,7 +63,7 @@ const DropdownWrapper = styled.div`
 const DropdownMenu = styled.div`
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 80px);
+    grid-template-rows: repeat(1, 80px);
     text-align: center;
     margin-bottom: 4rem;
 

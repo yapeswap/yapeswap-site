@@ -4,11 +4,14 @@ import styled from "styled-components"
 import { FaBars } from "react-icons/fa"
 import { menuData } from "../data/MenuData"
 import { Button } from "./Buttons"
+import Logo from "../assets/svg/logo.svg"
 
 const Header = ({ toggle }) => {
 return (
   <Nav>
-    <NavLink to="./">Yapeswap</NavLink>
+    <NavLink to="/">
+      <img src={Logo} alt='Logo' />
+    </NavLink>
     <Bars onClick={toggle}/>
     <NavMenu>
       {menuData.map((item, index) => (
@@ -16,12 +19,17 @@ return (
           {item.title}
         </NavLink>
       ))}
+      <NavBtn> 
+        <Button primary="true" round="true" href="https://yapeswap-interface.vercel.app/#/swap">
+          Enter App
+          </Button>
+      </NavBtn>
     </NavMenu>
-    <NavBtn>
+    {/*<NavBtn>
       <Button primary="true" round="true" to="yapeswap-interface.vercel.app/#/swap">
         Enter App
         </Button>
-    </NavBtn>
+    </NavBtn> */}
   </Nav>
 )
 }
@@ -31,7 +39,7 @@ export default Header
 
 const Nav = styled.nav`
   background: transparent;
-  height: 100px;
+  height: 80px;
   display: flex;
   justify-content: space-between;
   padding: 0.5rem calc((100vw - 1300px) / 2);
@@ -47,6 +55,10 @@ const NavLink = styled(Link)`
   padding: 0 1rem;
   height: 100%;
   cursor: pointer;
+
+  &.active {
+    color: #fff;
+  }
   `
 
 const Bars = styled(FaBars)`
@@ -63,20 +75,22 @@ const Bars = styled(FaBars)`
     cursor: pointer;
   }
   `
-    const NavMenu = styled.div`
+const NavMenu = styled.div`
     display: flex;
     align-items: center;
-    margin-right: -250px;
+    font-size: 20px;
+
+    margin-right: 24px;
 
     @media screen and (max-width: 768px) {
       display: none;
     }
   `
 
-  const NavBtn = styled.div` 
+const NavBtn = styled.div` 
     display: flex;
     align-items: center;
-    margin-right: 24px;
+    margin-left: 24px;
 
     @media screen and (max-width: 768px) {
       display: none;

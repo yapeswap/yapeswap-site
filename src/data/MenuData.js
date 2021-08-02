@@ -1,6 +1,4 @@
 export const menuData = [
-    {title: "About", link: "/about"},
-    {title: "Swap", link: "/swap"},
-    {title: "Farm", link: "/farm"},
-    {title: "Stake", link: "/stake"},
+    {title: "Doc", link: "https://docs.google.com/document/u/0/"},
+    
 ]
