@@ -5,11 +5,11 @@ import { FaBars } from "react-icons/fa"
 import { menuData } from "../data/MenuData"
 import { Button } from "./Buttons"
 
-const Header = () => {
+const Header = ({ toggle }) => {
 return (
   <Nav>
-    <NavLink to="/">Yapeswap</NavLink>
-    <Bars />
+    <NavLink to="./">Yapeswap</NavLink>
+    <Bars onClick={toggle}/>
     <NavMenu>
       {menuData.map((item, index) => (
         <NavLink to={item.link} key={index}>
@@ -18,7 +18,7 @@ return (
       ))}
     </NavMenu>
     <NavBtn>
-      <Button primary="true" round="true" to="/swap">
+      <Button primary="true" round="true" to="yapeswap-interface.vercel.app/#/swap">
         Enter App
         </Button>
     </NavBtn>
@@ -31,10 +31,10 @@ export default Header
 
 const Nav = styled.nav`
   background: transparent;
-  height: 80px;
+  height: 100px;
   display: flex;
   justify-content: space-between;
-  padding: 0.5rem calc((100vw - 130px) / 2);
+  padding: 0.5rem calc((100vw - 1300px) / 2);
   z-index: 100;
   position: relative; 
   `
@@ -59,16 +59,16 @@ const Bars = styled(FaBars)`
     top: 0;
     right: 0;
     transform: translate(-100%, 75%); 
-    font-size: 1.8 rem;
+    font-size: 1.8rem;
     cursor: pointer;
   }
   `
     const NavMenu = styled.div`
     display: flex;
-    align-items: center:
-    margin-right: -48px;
+    align-items: center;
+    margin-right: -250px;
 
-    @media screen and (max-width: 768px){
+    @media screen and (max-width: 768px) {
       display: none;
     }
   `

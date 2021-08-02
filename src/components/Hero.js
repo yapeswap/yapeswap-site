@@ -16,7 +16,7 @@ const Hero = () => {
                     <HeroP>When your LP's aren't being used, they aren't earning...
 That's why we Ape them into Yearn Finance until they're needed for swaps!</HeroP>
                     <Button primary="true" big="true" round="true"
-                    to="/farm">
+                    to="yapeswap-interface.vercel.app/#/swap">
                         Earn Now
                     </Button>
                 </HeroItems>
@@ -32,15 +32,15 @@ const HeroContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    padding: 0 1 rem;
+    height: 95vh;
+    padding: 0 1rem;
     postion: relative;
     margin-top: -80px;
     color: #fff;
 
 
 :before{
-    content: "",
+    content: "";
     position: absolute;
     top: 0;
     bottom: 0;
@@ -49,10 +49,10 @@ const HeroContainer = styled.div`
     z-index: 2;
     background: linear-gradient(
         180deg, 
-        rgba(0,0,0,0.2) 0%, 
-        rgba(0,0,0,0.6) 100%
+        rgba(0,0,0,0.1) 0%, 
+        rgba(0,0,0,0.1) 100%
     ), 
-    linear-gradient(180deg, rgba(0,0,0,0.2) 0%, transparent 100%);
+    linear-gradient(180deg, rgba(0,0,0,0.1) 0%, transparent 100%);
 }
 `
 
@@ -99,13 +99,14 @@ const HeroH1 = styled.h1`
     font-size: clamp(1.5rem, 6vw, 4rem);
     margin-bottom: 1.5rem;
     letter-spacing: 3px;
-    padding: 0 1 rem;
+    padding: 0 1rem;
     color: #fff;
 `
 
 const HeroP = styled.p`
-    font-size: clamp(1rem, 1vw, 2rem);
+    font-size: clamp(.5rem, 2vw, 1.25rem);
     margin-bottom: 2rem;
+    letter-spacing: 3px;
     font-weight: 600;
     color: #F3722C;
 `

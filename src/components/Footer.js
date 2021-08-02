@@ -11,7 +11,7 @@ const Footer = () => {
                     <p>It's simple, be the most profitable AMM.</p>
                 </FooterDesc>
                 <FooterLinkItems>
-                    <FooterLinkTitle>Contact Us</FooterLinkTitle>
+                    <FooterLinkTitle>Social</FooterLinkTitle>
                     <FooterLink to="https://twitter.com/yapeswap">Twitter</FooterLink>
                     <FooterLink to="https://discord.gg/yrfQ6wM6">Discord</FooterLink>
                     <FooterLink to="https://t.me/Yapeswap">Telegram</FooterLink>
@@ -25,18 +25,19 @@ const Footer = () => {
 export default Footer
 
 const FooterContainer = styled.div`
-    padding: 5rem calc((100vw - 1100px) / 2);
+    padding: 5rem calc((90vw - 1100px) / 2);
     display: grid;
-    gridt-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     color: #000;
-    background: ;
+    background: transparent;
+    height: 265px;
 
 `
 const FooterDesc = styled.div`
     padding: 0 2rem;
     
     h1 {
-        margin-bottom: 3rem;
+        margin-bottom: 2rem;
         color: #F94144;
     }
 
