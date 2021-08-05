@@ -11,7 +11,9 @@ const Footer = () => {
         <FooterContainer>
             <FooterLinksWrapper>
                 <FooterDesc>
-                    <h1>Yape!</h1>
+                    <h1><style>
+                    @import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&display=swap');
+                    </style>Yape!</h1>
                     <p>It's simple, be the most profitable AMM. </p>
                 </FooterDesc>
                 <FooterLinkItems>
@@ -42,8 +44,7 @@ const FooterDesc = styled.div`
 
     h1 {
         margin-bottom: 1rem;
-        font-style: italic;
-        font-family: Prompt;
+        font-family: 'Lobster Two', cursive;
         font-weight: bold;
         font-size: 40px;
         color: #F94144;
