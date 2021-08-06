@@ -31,12 +31,12 @@ const Footer = () => {
 export default Footer
 
 const FooterContainer = styled.div`
-    padding: 5rem calc((85vw - 1100px) / 2);
+    padding: 1rem calc((85vw - 1100px) / 2);
     display: grid;
     grid-template-columns: repeat(2, auto-fill);
     color: #000;
     background: transparent;
-    height: 225px;
+    height: 200px;
 
 `
 const FooterDesc = styled.div`
