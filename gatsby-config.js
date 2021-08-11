@@ -48,6 +48,17 @@ module.exports = {
       },
     },
     
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `Roboto Mono`,
+          `Open Sans`, // you can also specify font weights and styles
+          'Lobster Two',
+        ],
+        display: 'swap'
+      }
+    },
 
 
     `gatsby-plugin-gatsby-cloud`,

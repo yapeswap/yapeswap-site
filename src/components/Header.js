@@ -4,7 +4,7 @@ import styled from "styled-components"
 import { FaBars } from "react-icons/fa"
 import { menuData } from "../data/MenuData"
 import { Button } from "./Buttons"
-import Logo from "../assets/svg/logo.svg"
+import Logo from "../assets/svg/whiteLogo.svg"
 
 const Header = ({ toggle }) => {
 return (
@@ -15,12 +15,12 @@ return (
     <Bars onClick={toggle}/>
     <NavMenu>
       {menuData.map((item, index) => (
-        <NavLink to={item.link} key={index}>
+        <NavLink to={item.link} key={index} target="_blank">
           {item.title}
         </NavLink>
       ))}
       <NavBtn> 
-        <Button primary="true" round="true" href="https://yapeswap-interface.vercel.app/#/swap">
+        <Button round="true" href="https://yapeswap-interface.vercel.app/#/swap">
           Enter App
           </Button>
       </NavBtn>

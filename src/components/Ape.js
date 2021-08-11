@@ -40,11 +40,11 @@ function getApe(data) {
                 />
                 <ProductInfo>
                     <TextWrap>
-                        <ImCheckmark />
+                        <ImCheckmark css={'color: #43AA8B'}/>
                         <ProductTitle>{item.node.name}</ProductTitle>
                     </TextWrap> 
-                    <Button to="/NFT" primary="true" round="true" css={`postion: absolute; 
-                            top:420p; font: 14px`}>{item.node.button}</Button>
+                    <Button to="/" round="true" css={`position: absolute; 
+                            top: 600px; font-size: 15px`}>{item.node.button}</Button>
                 </ProductInfo>
             </ProductCard>
         )
@@ -65,8 +65,9 @@ export default Ape
 const ApeContainer = styled.div`
     min-hieght: 100vh;
     padding: 5rem calc((100vw - 1300px) / 2);
-    background: #F94144;
+    background: #161616;
     color: #fff;
+    
 `
 
 const ApeHeading = styled.div`
@@ -75,8 +76,13 @@ const ApeHeading = styled.div`
     margin-bottom: 5rem;
     letter-spacing: 3px;
     padding: 0 1rem;
-    font-weight: bold;
+    letter-spacing: -0.02em;
+    font-weight: 500;
     color: #fff;
+    mix-blend-mode: luminosity;
+    opacity: 0.9;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
 `
 
 const ApeWrapper = styled.div`
@@ -97,7 +103,7 @@ const ApeWrapper = styled.div`
 const ProductCard = styled.div`
     line-height: 2;
     width: 100%;
-    height: 600px;
+    height: 670px;
     position: relative;
     border-radius: 10px;
     transition: 0.2s ease;
@@ -131,11 +137,11 @@ const TextWrap = styled.div`
     display: flex;
     align-items: center;
     position: absolute;
-    top: 500px;
-    font-size: 15px;
+    top: 560px;
+    font-size: 20px;
 `
 const ProductTitle= styled.div`
     font-weight: 400;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     margin-left: 0.5rem;
 `

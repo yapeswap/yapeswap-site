@@ -11,17 +11,15 @@ const Footer = () => {
         <FooterContainer>
             <FooterLinksWrapper>
                 <FooterDesc>
-                    <h1><style>
-                    @import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&display=swap');
-                    </style>Yape!</h1>
+                    <h1>Yape!</h1>
                     <p>It's simple, be the most profitable AMM. </p>
                 </FooterDesc>
                 <FooterLinkItems>
                         <FooterLinkTitle></FooterLinkTitle>
-                        <FooterLink to="https://twitter.com/yapeswap"><img src={Twitter} alt='Twitter' /></FooterLink>
-                        <FooterLink to="https://discord.gg/ZWG7TJQH"><img src={Discord} alt='Discord' /></FooterLink>
-                        <FooterLink to="https://t.me/Yapeswap"><img src={Telegram} alt='Telegram' /></FooterLink>
-                        <FooterLink to="https://github.com/yapeswap"><img src={Github} alt='Github' /></FooterLink>
+                        <FooterLink to="https://twitter.com/yapeswap" target="_blank"><img src={Twitter} alt='Twitter' /></FooterLink>
+                        <FooterLink to="https://discord.gg/ZWG7TJQH" target="_blank"><img src={Discord} alt='Discord' /></FooterLink>
+                        <FooterLink to="https://t.me/Yapeswap" target="_blank"><img src={Telegram} alt='Telegram' /></FooterLink>
+                        <FooterLink to="https://github.com/yapeswap" target="_blank"><img src={Github} alt='Github' /></FooterLink>
                 </FooterLinkItems>
             </FooterLinksWrapper>
         </FooterContainer>
@@ -48,6 +46,12 @@ const FooterDesc = styled.div`
         font-weight: bold;
         font-size: 40px;
         color: #F94144;
+    }
+
+    p {
+
+        font-family: 'Open Sans', sans-serif;
+        font-size: 16px;
     }
 
     @media screen and (max-width: 400px) {

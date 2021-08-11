@@ -1,21 +1,61 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Button } from './Buttons'
-import Video from '../assets/videos/video3.mp4'
+import { useStaticQuery } from 'gatsby'
+import { graphql } from 'gatsby'
+// import Img from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image"
+
+
 
 const Hero = () => {
+    const data = useStaticQuery(graphql`
+    query SpaceApeQuery {
+        allSpaceApeJson {
+            edges {
+              node {
+                img {
+                  childImageSharp {
+                    gatsbyImageData(aspectRatio:1, placeholder: BLURRED, layout: FULL_WIDTH
+                        
+                        )
+                    }
+                }
+              
+            }
+          }
+        }
+        
+    }
+`)
+
+function getSpaceApe(data) {
+    const apeSpaceArray = []
+    data.allSpaceApeJson.edges.forEach((item,index) => {
+        apeSpaceArray.push(
+            <ProductCard key={index}>
+                <ApeGatsbyImage image={item.node.img.childImageSharp.gatsbyImageData} 
+                    alt={item.node.alt}
+                />
+            </ProductCard>
+        )
+    })
+
+    return apeSpaceArray 
+}
+
+
     return (
         <HeroContainer>
-            <HeroBg>
-                <VideoBg src={Video} type="video3/mp4" autoPlay
-                loop muted playsInline />
-            </HeroBg>
+            <HeroBg> {getSpaceApe(data)} </HeroBg> 
+            <LightEffect />
             <HeroContent>
                 <HeroItems>
                     <HeroH1>Yearn-ed Liquidity Pools for Apes.</HeroH1>
                     <HeroP>When your LP's aren't being used, they aren't earning...
-That's why we Ape them into Yearn Finance until they're needed for swaps!</HeroP>
-                    <Button primary="true" big="true" round="true" href="https://yapeswap-interface.vercel.app">
+                    That's why we Ape them into Yearn Finance until they're needed for swaps!</HeroP>
+                    <Button big="true" round="true" href="https://yapeswap-interface.vercel.app"
+                            target="_blank">
                         Enter App
                     </Button>
                 </HeroItems>
@@ -27,51 +67,50 @@ That's why we Ape them into Yearn Finance until they're needed for swaps!</HeroP
 export default Hero
 
 const HeroContainer = styled.div`
-    background: #0c0c0c;
+    background: #161616;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 95vh;
+    width: 100%;
+    height: 100%;
     padding: 0 1rem;
-    postion: relative;
     margin-top: -80px;
     color: #fff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
-
-:before{
-    content: "";
+`
+const LightEffect = styled.div`
     position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    z-index: 2;
-    background: linear-gradient(
-        180deg, 
-        rgba(0,0,0,0.1) 0%, 
-        rgba(0,0,0,0.1) 100%
-    ), 
-    linear-gradient(180deg, rgba(0,0,0,0.1) 0%, transparent 100%);
-}
+    width: 1318.37px;
+    height: 1103.54px;
+    right: -480px;
+    top: -500px;
+
+    background: radial-gradient(50% 50% at 50% 50%, rgba(255, 243, 215, 0.5) 0%, rgba(214, 185, 250, 0) 100%, rgba(243, 236, 251, 0) 100%);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    transform: rotate(-55.5deg);
+
+`
+const HeroBg = styled.div `
+    display: flex;
+    position: relative; 
 `
 
-const HeroBg = styled.div`
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
+const ProductCard = styled.div`
+    line-height: 2;
     width: 100%;
-    height: 100%;
-    overflow: hidden;
+    height: 300px;
+    position: relative;
+    border-radius: 10px;
+    transition: 0.2s ease;
+`
+const ApeGatsbyImage = styled(GatsbyImage)`
+    display: flex;
+    position: relative;
+    height: 90%;
+    max-width: 100%;
 `
 
-const VideoBg = styled.video`
-    width: 100%;
-    height: 100%;
-    -0-object-fit: cover;
-    object-fit: cover;
-`
+
 
 const HeroContent = styled.div`
     z-index: 3;
@@ -97,15 +136,23 @@ const HeroItems = styled.div`
 const HeroH1 = styled.h1`
     font-size: clamp(1.5rem, 6vw, 4rem);
     margin-bottom: 1.5rem;
-    letter-spacing: 3px;
+    letter-spacing: -0.02em;
     padding: 0 1rem;
-    color: #fff;
+    font-weight: 500;
+    color: #E2E2E2;
+    mix-blend-mode: luminosity;
+    opacity: 0.9;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
 `
 
 const HeroP = styled.p`
     font-size: clamp(.5rem, 2vw, 1.25rem);
     margin-bottom: 2rem;
     letter-spacing: 3px;
-    font-weight: 500;
-    color: #F3722C;
+    font-weight: normal;
+    font-family: 'Open Sans', sans-serif;
+    color: #FFFFFF;
+    mix-blend-mode: luminosity;
+
 `

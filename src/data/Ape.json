@@ -3,12 +3,12 @@
         "img": "../assets/images/Titus.png",
         "alt": "Titus",
         "name": "Titus",
-        "button": "NFT"
+        "button": "NFT|SOON"
     },
     {
         "img": "../assets/images/Lucy.png",
         "alt": "Lucy",
         "name": "Lucy",
-        "button": "NFT"
+        "button": "NFT|SOON"
     }
 ]
