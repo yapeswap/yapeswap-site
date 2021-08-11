@@ -1,53 +1,15 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Button } from './Buttons'
-import { useStaticQuery } from 'gatsby'
-import { graphql } from 'gatsby'
-// import Img from "gatsby-image"
-import { GatsbyImage } from "gatsby-plugin-image"
-
+import Logo from "../assets/images/spaceApe.png"
 
 
 const Hero = () => {
-    const data = useStaticQuery(graphql`
-    query SpaceApeQuery {
-        allSpaceApeJson {
-            edges {
-              node {
-                img {
-                  childImageSharp {
-                    gatsbyImageData(aspectRatio:1, placeholder: BLURRED, layout: FULL_WIDTH
-                        
-                        )
-                    }
-                }
-              
-            }
-          }
-        }
-        
-    }
-`)
-
-function getSpaceApe(data) {
-    const apeSpaceArray = []
-    data.allSpaceApeJson.edges.forEach((item,index) => {
-        apeSpaceArray.push(
-            <ProductCard key={index}>
-                <ApeGatsbyImage image={item.node.img.childImageSharp.gatsbyImageData} 
-                    alt={item.node.alt}
-                />
-            </ProductCard>
-        )
-    })
-
-    return apeSpaceArray 
-}
 
 
     return (
         <HeroContainer>
-            <HeroBg> {getSpaceApe(data)} </HeroBg> 
+            <HeroBg> <img src={Logo} alt='Logo' /></HeroBg> 
             <LightEffect />
             <HeroContent>
                 <HeroItems>
@@ -69,8 +31,7 @@ export default Hero
 const HeroContainer = styled.div`
     background: #161616;
     display: flex;
-    width: 100%;
-    height: 100%;
+    height: 100vh;
     padding: 0 1rem;
     margin-top: -80px;
     color: #fff;
@@ -92,29 +53,21 @@ const LightEffect = styled.div`
 `
 const HeroBg = styled.div `
     display: flex;
-    position: relative; 
-`
-
-const ProductCard = styled.div`
-    line-height: 2;
-    width: 100%;
-    height: 300px;
-    position: relative;
-    border-radius: 10px;
-    transition: 0.2s ease;
-`
-const ApeGatsbyImage = styled(GatsbyImage)`
-    display: flex;
-    position: relative;
-    height: 90%;
-    max-width: 100%;
+    position: absolute; 
+    top: 545px;
+    left: 0.08px;
+    overflow: hidden;
+    
+    @media screen and (max-width: 768px) {
+        display: none;
+      }
 `
 
 
 
 const HeroContent = styled.div`
     z-index: 3;
-    height: calce(100vh - 80px);
+    height: calc(100vh - 80px);
     max-height: 100%;
     padding: 0rem calc((100vw - 1300px) / 2);
 `
