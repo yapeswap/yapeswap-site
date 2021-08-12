@@ -31,11 +31,16 @@ export default Hero
 const HeroContainer = styled.div`
     background: #161616;
     display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
     padding: 0 1rem;
+    position: relative;
     margin-top: -80px;
     color: #fff;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+
 
 `
 const LightEffect = styled.div`
@@ -44,6 +49,7 @@ const LightEffect = styled.div`
     height: 1103.54px;
     right: -480px;
     top: -500px;
+    overflow: hidden;
 
     background: radial-gradient(50% 50% at 50% 50%, rgba(255, 243, 215, 0.5) 0%, rgba(214, 185, 250, 0) 100%, rgba(243, 236, 251, 0) 100%);
     box-sizing: border-box;
@@ -52,11 +58,11 @@ const LightEffect = styled.div`
 
 `
 const HeroBg = styled.div `
-    display: flex;
+display: flex;
     position: absolute; 
     top: 545px;
     left: 0.08px;
-    overflow: hidden;
+   
     
     @media screen and (max-width: 768px) {
         display: none;
