@@ -20,7 +20,7 @@ return (
         </NavLink>
       ))}
       <NavBtn> 
-        <Button round="true" href="https://yapeswap-interface.vercel.app/#/swap">
+        <Button round="true" href="https://app.yape.exchange/#/swap">
           Enter App
           </Button>
       </NavBtn>

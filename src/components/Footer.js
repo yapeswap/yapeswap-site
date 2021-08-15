@@ -5,6 +5,7 @@ import Twitter from "../assets/svg/Twitter_black.svg"
 import Discord from "../assets/svg/Discord_black.svg"
 import Telegram from "../assets/svg/Telegram.svg"
 import Github from "../assets/svg/Github_black.svg"
+import Medium from "../assets/svg/Medium_black.svg"
 
 const Footer = () => {
     return (
@@ -20,6 +21,7 @@ const Footer = () => {
                         <FooterLink to="https://discord.gg/ZWG7TJQH" target="_blank"><img src={Discord} alt='Discord' /></FooterLink>
                         <FooterLink to="https://t.me/Yapeswap" target="_blank"><img src={Telegram} alt='Telegram' /></FooterLink>
                         <FooterLink to="https://github.com/yapeswap" target="_blank"><img src={Github} alt='Github' /></FooterLink>
+                        <FooterLink to="https://yapeswapdao.medium.com/" target="_blank"><img src={Medium} alt='Medium' /></FooterLink>
                 </FooterLinkItems>
             </FooterLinksWrapper>
         </FooterContainer>

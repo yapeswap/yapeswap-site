@@ -1,5 +1,6 @@
 export const menuData = [
-    {title: "Doc", link: "https://docs.google.com/document/u/0/"},
-    {title: "Forum", link: "https://yapeswapdao.medium.com/"},
+    {title: "Doc", link: "https://docs.yape.exchange/"},
+    {title: "DAO", link: "https://dao.yape.exchange/"},
+    {title: "Forum", link: "https://forum.workhard.finance/"},
     
 ]
