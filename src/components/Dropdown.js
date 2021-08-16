@@ -21,7 +21,7 @@ const Dropdown = ({ isOpen, toggle }) => {
                     ))}
                 </DropdownMenu>
                 <Btnwrap>
-                    <Button primary="true" round="true" to="https://yapeswap-interface.vercel.app/#/swap">
+                    <Button primary="true" round="true" to="https://app.yape.exchange/#/swap">
                         Enter App</Button>
                 </Btnwrap>
             </DropdownWrapper>
@@ -68,7 +68,7 @@ const DropdownMenu = styled.div`
     margin-bottom: 4rem;
 
     @media screen and (max-width: 480px) {
-        grid-template-rows: repeat(1, 60px);
+        grid-template-rows: repeat(2, 60px);
     }
 `
 
