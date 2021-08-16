@@ -28,8 +28,5 @@ export const Button = styled(Link)`
         color: #161616;
         transform: translateY(-2px);
         border-color: #fff;
-
-        
-        
     }
 `

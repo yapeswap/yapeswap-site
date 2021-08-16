@@ -49,15 +49,18 @@ const HeroContent = styled.div`
   z-index: 3;
   height: calc(100vh - 80px);
   max-height: 100%;
-  padding: 0rem calc((100vw - 1300px) / 2);
+  padding: 0rem 0rem;
+  @media only screen and (min-width: 760px) {
+    padding: 0rem 10vw 0rem 40vw;
+  }
 `
 
 const HeroItems = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  text-align: center;
+  align-items: left;
+  text-align: left;
   height: 100vh;
   max-height: 100%;
   padding: 0;
@@ -69,7 +72,6 @@ const HeroH1 = styled.h1`
   font-size: clamp(1.5rem, 6vw, 4rem);
   margin-bottom: 1.5rem;
   letter-spacing: -0.02em;
-  padding: 0 1rem;
   font-weight: 500;
   color: #e2e2e2;
   mix-blend-mode: luminosity;
@@ -78,7 +80,10 @@ const HeroH1 = styled.h1`
 `
 
 const HeroP = styled.p`
-  font-size: clamp(0.5rem, 2vw, 1.25rem);
+  font-size: 16px;
+  @media only screen and (min-width: 760px) {
+    font-size: clamp(0.5rem, 2vw, 1.25rem);
+  }
   margin-bottom: 2rem;
   letter-spacing: 3px;
   font-weight: normal;
@@ -107,6 +112,7 @@ const Hero = () => {
             round="true"
             href="https://app.yape.exchange/#/swap"
             target="_blank"
+            style={{ maxWidth: "200px", textAlign: "center" }}
           >
             Enter App
           </Button>
