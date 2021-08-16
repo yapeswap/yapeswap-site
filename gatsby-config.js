@@ -4,6 +4,7 @@ module.exports = {
     description: `Yearn-ed Liquidity for Apes!
     When your LP's aren't being used, they aren't earning...
     That's why we Ape them into Yearn Finance until they're needed for swaps!`,
+    image: `images/social-preview.jpg`,
     author: `@yapeswap`,
     siteUrl: `https://yape.exchange/`,
   },
