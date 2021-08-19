@@ -18,7 +18,7 @@ const Footer = () => {
                 <FooterLinkItems>
                         <FooterLinkTitle></FooterLinkTitle>
                         <FooterLink to="https://twitter.com/yapeswap" target="_blank"><img src={Twitter} alt='Twitter' /></FooterLink>
-                        <FooterLink to="https://discord.gg/ZWG7TJQH" target="_blank"><img src={Discord} alt='Discord' /></FooterLink>
+                        <FooterLink to="https://discord.gg/JeKKEuwX" target="_blank"><img src={Discord} alt='Discord' /></FooterLink>
                         <FooterLink to="https://t.me/Yapeswap" target="_blank"><img src={Telegram} alt='Telegram' /></FooterLink>
                         <FooterLink to="https://github.com/yapeswap" target="_blank"><img src={Github} alt='Github' /></FooterLink>
                         <FooterLink to="https://yapeswapdao.medium.com/" target="_blank"><img src={Medium} alt='Medium' /></FooterLink>
