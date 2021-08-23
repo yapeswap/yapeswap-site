@@ -4,7 +4,7 @@ module.exports = {
     author: `@yapeswap`,
     siteUrl: `https://yape.exchange/`,
     keywords: `defi, dex, tokens, crypto, yield farming, yeild, dao, lp, liquidity provider, rewards, ape, yape`,
-    image: 'https://yape.exchange/src/assets/images/social-preview.jpg'
+    image: 'https://yape.exchange/public/static/social-preview.jpg'
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
