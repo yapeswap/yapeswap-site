@@ -4,10 +4,10 @@ module.exports = {
     description: `Yearn-ed Liquidity for Apes!
     When your LP's aren't being used, they aren't earning...
     That's why we Ape them into Yearn Finance until they're needed for swaps!`,
-    image: `src/images/social.jpeg`,
     author: `@yapeswap`,
     siteUrl: `https://yape.exchange/`,
     keywords: 'defi, dex, tokens, crypto, yield farming, yeild, dao, lp, liquidity provider, rewards, ape, yape',
+    image: `src/images/social.jpeg`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
