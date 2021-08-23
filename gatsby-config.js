@@ -1,11 +1,11 @@
 module.exports = {
   siteMetadata: {
     title: `Yapeswap`,
-    description: `Yearn-ed liquidity pools for apes.`,
+    description: `Yapeswap is a next-generation, more capital efficient AMM, further generating yield from idle LPs.`,
     author: `@yapeswap`,
     siteUrl: `https://yape.exchange/`,
     keywords: `defi, dex, tokens, token, crypto, yield farming, yield, dao, lp, liquidity provider, rewards, ape, yape, swap, exchange`,
-    image: 'https://i.imgur.com/RlLjwPT.png'
+    image: 'https://i.imgur.com/kJ9EGxT.png?1'
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
