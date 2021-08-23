@@ -4,7 +4,7 @@ module.exports = {
     description: `Yapeswap is a next-generation, more capital efficient AMM, further generating yield from idle LPs.`,
     author: `@yapeswap`,
     siteUrl: `https://yape.exchange/`,
-    keywords: `defi, dex, tokens, token, crypto, yield farming, yield, dao, lp, liquidity provider, rewards, ape, yape, yapes, swap, yapeswap, exchange`,
+    keywords: `defi, dex, tokens, token, crypto, yield farming, yield, yield ape, yearned, dao, lp, liquidity provider, rewards, ape, apeing in, yape, yapes, swap, yapeswap, exchange`,
     image: 'https://i.imgur.com/Ascs8a4.png?1'
   },
   plugins: [
