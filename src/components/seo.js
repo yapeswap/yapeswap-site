@@ -44,7 +44,7 @@ function Seo({ description, lang, meta, title}) {
           content: metaDescription,
         },
         {
-          name: "keywords",
+          name: `keywords`,
           content: keywords,
         },
         {
@@ -60,7 +60,7 @@ function Seo({ description, lang, meta, title}) {
           content: `website`,
         },
         {
-          property: 'og:image',
+          property: `og:image`,
           content: image,
         },
         {
