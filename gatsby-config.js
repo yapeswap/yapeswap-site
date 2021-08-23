@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Yapeswap`,
+    description: `Yearn-ed liquidity pools for apes.`,
     author: `@yapeswap`,
     siteUrl: `https://yape.exchange/`,
     keywords: `defi, dex, tokens, crypto, yield farming, yeild, dao, lp, liquidity provider, rewards, ape, yape`,
