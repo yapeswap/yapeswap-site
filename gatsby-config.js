@@ -6,7 +6,7 @@ module.exports = {
     That's why we Ape them into Yearn Finance until they're needed for swaps!`,
     author: `@yapeswap`,
     siteUrl: `https://yape.exchange/`,
-    keywords: 'defi, dex, tokens, crypto, yield farming, yeild, dao, lp, liquidity provider, rewards, ape, yape',
+    keywords: `defi, dex, tokens, crypto, yield farming, yeild, dao, lp, liquidity provider, rewards, ape, yape`,
     image: `src/images/social.jpeg`,
   },
   plugins: [
