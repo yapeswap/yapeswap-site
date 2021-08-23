@@ -4,7 +4,7 @@ module.exports = {
     description: `Yearn-ed liquidity pools for apes.`,
     author: `@yapeswap`,
     siteUrl: `https://yape.exchange/`,
-    keywords: `defi, dex, tokens, crypto, yield farming, yeild, dao, lp, liquidity provider, rewards, ape, yape`,
+    keywords: `defi, dex, tokens, token, crypto, yield farming, yield, dao, lp, liquidity provider, rewards, ape, yape, swap, exchange`,
     image: 'https://i.imgur.com/RlLjwPT.png'
   },
   plugins: [
