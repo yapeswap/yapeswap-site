@@ -60,7 +60,7 @@ function Seo({ description, lang, meta, title}) {
           content: `website`,
         },
         {
-          property: "og:image",
+          property: 'og:image',
           content: image,
         },
         {
@@ -98,6 +98,7 @@ Seo.defaultProps = {
 
 Seo.propTypes = {
   description: PropTypes.string,
+  image: PropTypes.string,
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
   title: PropTypes.string.isRequired,
