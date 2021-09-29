@@ -40,7 +40,7 @@ const HeroBg = styled.div`
   bottom: 0px;
   left: 0.08px;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1050px) {
     display: none;
   }
 `
@@ -50,7 +50,7 @@ const HeroContent = styled.div`
   height: calc(100vh - 80px);
   max-height: 100%;
   padding: 0rem 0rem;
-  @media only screen and (min-width: 760px) {
+  @media only screen and (min-width: 1000px) {
     padding: 0rem 10vw 0rem 40vw;
   }
 `
@@ -81,7 +81,7 @@ const HeroH1 = styled.h1`
 
 const HeroP = styled.p`
   font-size: 16px;
-  @media only screen and (min-width: 760px) {
+  @media only screen and (min-width: 1000px) {
     font-size: clamp(0.5rem, 2vw, 1.25rem);
   }
   margin-bottom: 2rem;
